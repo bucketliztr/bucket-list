@@ -1,5 +1,14 @@
-<h1>Listing users</h1>
+  <div class="container">
+    <div class="page-header" id="banner">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>All Bucket Lists!</h1>
+          <p class="lead">Read what others wrote.</p>
+        </div>
+      </div>
+    </div>
 
+<h4><%= link_to 'Create Your Bucket List', new_user_path %></h4>
 <table>
   <thead>
     <tr>
@@ -14,6 +23,7 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
+        <td><%= image_tag avatar_url(user) %></td>
         <td><%= user.name %></td>
         <td><%= user.email %></td>
         <td><%= link_to 'Show', user %></td>
@@ -26,4 +36,6 @@
 
 <br>
 
-<%= link_to 'New User', new_user_path %>
+<h4><%= link_to 'Create Your Bucket List', new_user_path %></h4>
+
+</div>

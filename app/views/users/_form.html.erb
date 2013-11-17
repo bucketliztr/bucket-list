@@ -1,25 +1,54 @@
-<%= form_for(@user) do |f| %>
-  <% if @user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
 
-      <ul>
-      <% @user.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+  <div class="well">
+      <%= form_for @user, :html => {:class => "form-horizontal"} do |f| %>
+      <div class="form-group">
+        <%= f.label :name, class: "col-lg-2 control-label" %>
+        <div class="col-lg-10">
+        <%= f.text_field :name, class: "control-label" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= f.label :email, class: "col-lg-2 control-label" %>
+        <div class="col-lg-10">
+        <%= f.text_field :email, class: "control-label" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= f.label :age, class: "col-lg-2 control-label" %>
+        <div class="col-lg-10">
+        <%= f.text_field :age, class: "control-label" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= f.label :location, class: "col-lg-2 control-label" %>
+        <div class="col-lg-10">
+        <%= f.text_field :location, class: "control-label" %>
+        </div>
+      </div>
+      <h3>Bucket List Items</h3>
+        <%= f.fields_for :list_items do |builder| %>
+            <fieldset>
+              <%= builder.label :name, "Add a Bucket List Item" %>
+              <%= builder.text_field :name %>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+              <%= builder.check_box :_destroy %>
+              <%= builder.label :_destroy, "Remove Bucket List Item" %>
+            </fieldset>
+        <% end %>
+        <%= link_to_add_fields "Add Another Bucket List Item", f, :list_items %>
+      <div class="form-group">
+        <div class="col-lg-10 col-lg-offset-2">
+          <div class="actions">
+          <button class="btn btn-default">Cancel</button> 
+          <button type="submit" class="btn btn-primary">Save Your Bucket List!</button>   
+          </div>
+        </div>
+      </div>
+    <% end %>
+</div>
+
+    
+
+
+
+

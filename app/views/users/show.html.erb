@@ -1,14 +1,43 @@
-<p id="notice"><%= notice %></p>
+  <div class="container">
+    <div class="page-header" id="banner">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Create Your Bucket List</h1>
+          <p class="lead">Add items one by one, as many or as few as you'd like.</p>
+        </div>
+      </div>
+    </div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
+    <p>
+      <strong>Name:</strong>
+      <%= @user.name %>
+    </p>
+    <div id="gravatar">
+    <%= image_tag avatar_url(user) %>
+    </div>
+    <p>
+      <strong>Age:</strong>
+      <%= @user.age %>
+    </p>
+    <p>
+      <strong>Location:</strong>
+      <%= @user.location %>
+    </p>
+    <p>
+      <strong>Location:</strong>
+      <%= @user.location %>
+    </p>
+    <h2>Bucket List</h2>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
+    <% @users.list_items.each do |list_item| %>
+      <tr>
+        <td><%= list_item.name %></td>
+      </tr>
+    <% end %>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<%= link_to 'Edit', edit_user_path(user) %>
+<%= link_to 'All Bucket Lists', users_path %>
+
+</div>
+
+

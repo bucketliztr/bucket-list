@@ -11,23 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131107034301) do
+ActiveRecord::Schema.define(version: 20131108131435) do
 
-  create_table "lists", force: true do |t|
-    t.string   "title"
-    t.string   "item"
+  create_table "list_items", force: true do |t|
+    t.text     "name"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "lists", ["user_id"], name: "index_lists_on_user_id"
+  add_index "list_items", ["user_id"], name: "index_list_items_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "name"
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "age"
+    t.string   "location"
+    t.string   "slug"
   end
+
+  add_index "users", ["slug"], name: "index_users_on_slug", unique: true
 
 end

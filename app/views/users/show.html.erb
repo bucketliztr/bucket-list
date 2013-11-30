@@ -1,43 +1,29 @@
-  <div class="container">
-    <div class="page-header" id="banner">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1>Create Your Bucket List</h1>
-          <p class="lead">Add items one by one, as many or as few as you'd like.</p>
+  <div class="page-header" id="banner">
+    <h1 class="amatic animated fadeIn"><%=@user.name%>'s Bucket List</h1>
+    <br>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+          <br><br>
+          <p>
+            <strong>Age:</strong> <h4><%= @user.age %></h4>
+          </p>
+          <p>
+            <strong>Location:</strong> <h4><%= @user.location %></h4>
+          </p>
+          <h3>Bucket List</h3>
+
+          <% @user.list_items.each do |list_item| %>
+            <h4><%= list_item.name %></h4>
+          <% end %>
+          <br>  
         </div>
       </div>
     </div>
-
-    <p>
-      <strong>Name:</strong>
-      <%= @user.name %>
-    </p>
-    <div id="gravatar">
-    <%= image_tag avatar_url(user) %>
-    </div>
-    <p>
-      <strong>Age:</strong>
-      <%= @user.age %>
-    </p>
-    <p>
-      <strong>Location:</strong>
-      <%= @user.location %>
-    </p>
-    <p>
-      <strong>Location:</strong>
-      <%= @user.location %>
-    </p>
-    <h2>Bucket List</h2>
-
-    <% @users.list_items.each do |list_item| %>
-      <tr>
-        <td><%= list_item.name %></td>
-      </tr>
-    <% end %>
-
-<%= link_to 'Edit', edit_user_path(user) %>
-<%= link_to 'All Bucket Lists', users_path %>
-
+  </div>
+  <div class="pull-right">
+  <%= link_to 'Edit Bucket List', edit_user_path(@user) %>
 </div>
 
 

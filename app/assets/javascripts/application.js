@@ -12,8 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require users.js.coffee
-
+//= require bootstrap
+//= require_tree .
 
 

@@ -1,21 +1,14 @@
   <div class="container">
     <div class="page-header" id="banner">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1>All Bucket Lists!</h1>
-          <p class="lead">Read what others wrote.</p>
-        </div>
-      </div>
+      <h1 class="amatic animated fadeIn">All Bucket Lists</h1>
     </div>
 
-<h4><%= link_to 'Create Your Bucket List', new_user_path %></h4>
-<table>
+  <!-- Table -->
+  <table class="table table-striped">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Email</th>
-      <th></th>
-      <th></th>
+      <th><h4>Name</h4></th>
+      <th><h4>Email</h4></th>
       <th></th>
     </tr>
   </thead>
@@ -23,19 +16,19 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-        <td><%= image_tag avatar_url(user) %></td>
-        <td><%= user.name %></td>
-        <td><%= user.email %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><strong><%= user.name %></strong></td>
+        <td><strong><%= user.email %></strong></td>
+        <td><%= link_to 'Show', user %>  |
+        <%= link_to 'Edit', edit_user_path(user) %>  |
+        <%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
+
 <br>
 
-<h4><%= link_to 'Create Your Bucket List', new_user_path %></h4>
+<h4><%= link_to 'Create Your Bucket List', new_user_path, class: "fittext pacifico" %></h4>
 
 </div>

@@ -1,32 +1,21 @@
-  <div class="container">
-    <div class="page-header" id="banner">
+
+  <div class="page-header" id="banner">
+    <h1 class="amatic animated fadeIn">Edit Your Bucket List</h1>
+    <div class="container">
       <div class="row">
-        <div class="col-lg-6">
-          <h1>Edit Your Bucket List</h1>
+        <div class=" col-xs-12 col-sm-6">
+          <div class="form-container clearfix">
+
+          <%= render 'form' %>
+
+          <%= link_to 'Back to Bucket List Page', @user %> 
+          
+
         </div>
       </div>
-  	</div>
-
-<%= render 'form' %>
-
-<%= link_to 'Edit', edit_user_path(@user) %> 
-    
-    <%= form_for @user, class: "form-horizontal" do |f| %>
-      <%= f.fields_for :list_items do |ff| %>
-      <div>
-        <%= ff.label :name %>
-        <%= ff.text_field :name %>
-     
-        <% if ff.object.persisted? %>
-          <%= ff.check_box :_destroy %>
-          <%= ff.label :_destroy, "Destroy" %>
-        <% end %> 
-      <% end %>
-      </div>
-    <% end %>
-
-<%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>
-<%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %>
-
+    </div>
+  </div>
+</div>
+<div class="pull-right">
+  <%= link_to 'Delete Bucket List', @user, method: :delete, data: { confirm: 'Are you sure?' } %>
 </div>

@@ -4,51 +4,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "bucket_list" %></title>
     <%= csrf_meta_tags %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-    <%= csrf_meta_tags %>
+    <%= javascript_include_tag "application" %>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
 
-    <%= stylesheet_link_tag "simplex", :media => "all" %>
-
-    <%= yield(:page_stylesheet) if content_for?(:page_stylesheet) %>
+    <%= stylesheet_link_tag "application", :media => "all" %>
 
   </head>
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li>
+            <%= link_to "Browse Bucket Lists", users_path %>
+          </li>
+          <li>
+            <a href="http://observando.net/">Inspiration</a>
+          </li>
+          <li>
+            <%= link_to "About", pages_about_path %>
+          </li>
+        </ul>
+        <h3 class="text-muted"><%= link_to "Bucketliztr", root_path %></h3>
+      </div>
+
       <div class="container">
-        <a href="../" class="navbar-brand">Bucket List</a>
-        <nav class="collapse navbar-collapse" role="navigation">
-          <ul class="nav navbar-nav">
-            <li class="active">
-              <%= link_to "Browse Bucket Lists", users_path %>
-            </li>
-            <li class="active">
-              <a href="http://observando.net/">Inspiration</a>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <%= link_to "About", pages_about_path %>
-            </li>
-          </ul>
+        <div class="row">
+          <div class="social">
+            <a href="#" ><span class="social-item"><i class="entypo-facebook"></i></span></a>
+            <a href="#"><span class="social-item"><i class="entypo-twitter"></i></span></a>
+            <a href="#"><span class="social-item"><i class="entypo-gplus"></i></span></a>
+            <a href="#"><span class="social-item"><i class="entypo-pinterest"></i></span></a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="span12" "pagination-centered">
-    <br>
+
+  
 
 <%= yield %>
 
-    </div>
+
+      <!-- FOOTER -->
+      <footer>
+        <br />
+        <div class="container">
+          <div class="row">
+            <hr>
+          <p class="pull-right"><%= link_to "Back to top", root_path %></p>
+          <p>&copy; 2013 Bucketliztr</p>
+          </div>
+        </div>
+      </footer>
+
+    </div><!-- /.container -->
 
     <!-- Javascripts
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <%= javascript_include_tag "simplex" %>
+    <%= javascript_include_tag "application" %>
     <%= yield(:page_javascript) if content_for?(:page_javascript) %>
+
   </body>
 </html>

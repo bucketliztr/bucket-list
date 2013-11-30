@@ -36,7 +36,7 @@ class UsersController < ApplicationController
         format.json { render action: 'show', status: :created, location: @user }
         ModelMailer.new_record_notification(@user).deliver
         redirect_to @user
-  end
+  # end
       else
         format.html { render action: 'new' }
         format.json { render json: @user.errors, status: :unprocessable_entity }

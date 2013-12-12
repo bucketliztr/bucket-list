@@ -21,16 +21,25 @@
       </div>
       <br>
       <h3>Bucket List Items</h3>
-        <%= f.fields_for :list_items do |builder| %>
-        <div class="form-group">
-          <%= render 'list_item_fields'||'users/list_item_fields', f: builder %>
-        </div>
+        <%= f.fields_for :list_item do |ff| %>
+          <fieldset id="list-items">
+            <div class="list_item">
+              <div class="form-group">
+                <%= ff.label :name, "Add an Item" %>
+                <%= ff.text_field :name %>
+              </div>
+              <div class="form-group">
+                <%= ff.check_box :_destroy, class: "remove" %>
+                <%= ff.label :_destroy, "Remove an Item" %>
+              </div>
+            </div>
+          </fieldset>
         <% end %>
-        <br>
-        <h4><%= link_to_add_fields "Add Another Bucket List Item", f, :list_items %></h4>
-        <br>
+        <button id="add_exercise" class="form-submit-btn"><h4>Add Another List Item<h4></button>
+        <br><br>
+        <hr>
         <div class="actions">
-          <button type="submit" class="btn"><i class="entypo-mail">Save Your Bucket List</i></button>   
+          <button type="submit" class="form-submit-btn">Save Your Bucket List</button>   
         </div>
     <% end %>
 

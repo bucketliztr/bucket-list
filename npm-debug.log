@@ -1,0 +1,349 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'instal', 'recess', '-g' ]
+2 info using npm@1.3.14
+3 info using node@v0.10.22
+4 verbose cache add [ 'recess', null ]
+5 verbose cache add name=undefined spec="recess" args=["recess",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'recess',
+6 verbose parsed url   path: 'recess',
+6 verbose parsed url   href: 'recess' }
+7 silly lockFile d0d1f171-recess recess
+8 verbose lock recess /Users/rosannehoyem/.npm/d0d1f171-recess.lock
+9 silly lockFile d0d1f171-recess recess
+10 silly lockFile d0d1f171-recess recess
+11 verbose addNamed [ 'recess', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile e131134d-recess recess@
+14 verbose lock recess@ /Users/rosannehoyem/.npm/e131134d-recess.lock
+15 silly addNameRange { name: 'recess', range: '*', hasData: false }
+16 verbose url raw recess
+17 verbose url resolving [ 'https://registry.npmjs.org/', './recess' ]
+18 verbose url resolved https://registry.npmjs.org/recess
+19 info trying registry request attempt 1 at 09:56:11
+20 http GET https://registry.npmjs.org/recess
+21 http 200 https://registry.npmjs.org/recess
+22 silly registry.get cb [ 200,
+22 silly registry.get   { vary: 'Accept',
+22 silly registry.get     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+22 silly registry.get     etag: '"CKXNVF40OV11VEMIXQHXCAY4"',
+22 silly registry.get     date: 'Sat, 30 Nov 2013 14:56:11 GMT',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'content-length': '42182' } ]
+23 silly addNameRange number 2 { name: 'recess', range: '*', hasData: true }
+24 silly addNameRange versions [ 'recess',
+24 silly addNameRange   [ '0.1.0',
+24 silly addNameRange     '1.0.0',
+24 silly addNameRange     '1.0.1',
+24 silly addNameRange     '1.0.2',
+24 silly addNameRange     '1.0.3',
+24 silly addNameRange     '1.0.4',
+24 silly addNameRange     '1.1.0',
+24 silly addNameRange     '1.1.1',
+24 silly addNameRange     '1.1.3',
+24 silly addNameRange     '1.1.4',
+24 silly addNameRange     '1.1.5',
+24 silly addNameRange     '1.1.6',
+24 silly addNameRange     '1.1.7',
+24 silly addNameRange     '1.1.8',
+24 silly addNameRange     '1.1.9' ] ]
+25 verbose addNamed [ 'recess', '1.1.9' ]
+26 verbose addNamed [ '1.1.9', '1.1.9' ]
+27 silly lockFile 21009289-recess-1-1-9 recess@1.1.9
+28 verbose lock recess@1.1.9 /Users/rosannehoyem/.npm/21009289-recess-1-1-9.lock
+29 silly lockFile 8f8cecd7-pmjs-org-recess-recess-1-1-9-tgz https://registry.npmjs.org/recess/-/recess-1.1.9.tgz
+30 verbose lock https://registry.npmjs.org/recess/-/recess-1.1.9.tgz /Users/rosannehoyem/.npm/8f8cecd7-pmjs-org-recess-recess-1-1-9-tgz.lock
+31 verbose addRemoteTarball [ 'https://registry.npmjs.org/recess/-/recess-1.1.9.tgz',
+31 verbose addRemoteTarball   '831c551f45df87d484c6123ffde91030bef1581a' ]
+32 info retry fetch attempt 1 at 09:56:12
+33 verbose fetch to= /var/folders/93/66skkqh52fnd5bps3n28tg940000gn/T/npm-2788-05e5swyX/1385823372328-0.7395152582321316/tmp.tgz
+34 http GET https://registry.npmjs.org/recess/-/recess-1.1.9.tgz
+35 http 200 https://registry.npmjs.org/recess/-/recess-1.1.9.tgz
+36 verbose tar unpack /var/folders/93/66skkqh52fnd5bps3n28tg940000gn/T/npm-2788-05e5swyX/1385823372328-0.7395152582321316/tmp.tgz
+37 silly lockFile f04905fd-72328-0-7395152582321316-package tar:///var/folders/93/66skkqh52fnd5bps3n28tg940000gn/T/npm-2788-05e5swyX/1385823372328-0.7395152582321316/package
+38 verbose lock tar:///var/folders/93/66skkqh52fnd5bps3n28tg940000gn/T/npm-2788-05e5swyX/1385823372328-0.7395152582321316/package /Users/rosannehoyem/.npm/f04905fd-72328-0-7395152582321316-package.lock
+39 silly lockFile ec7e3b36-72328-0-7395152582321316-tmp-tgz tar:///var/folders/93/66skkqh52fnd5bps3n28tg940000gn/T/npm-2788-05e5swyX/1385823372328-0.7395152582321316/tmp.tgz
+40 verbose lock tar:///var/folders/93/66skkqh52fnd5bps3n28tg940000gn/T/npm-2788-05e5swyX/1385823372328-0.7395152582321316/tmp.tgz /Users/rosannehoyem/.npm/ec7e3b36-72328-0-7395152582321316-tmp-tgz.lock
+41 silly gunzTarPerm modes [ '755', '644' ]
+42 silly gunzTarPerm extractEntry package.json
+43 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+44 silly gunzTarPerm extractEntry .npmignore
+45 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+46 silly gunzTarPerm extractEntry README.md
+47 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+48 silly gunzTarPerm extractEntry LICENSE
+49 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+50 silly gunzTarPerm extractEntry lib/core.js
+51 silly gunzTarPerm modified mode [ 'lib/core.js', 438, 420 ]
+52 silly gunzTarPerm extractEntry lib/index.js
+53 silly gunzTarPerm modified mode [ 'lib/index.js', 438, 420 ]
+54 silly gunzTarPerm extractEntry lib/min.js
+55 silly gunzTarPerm modified mode [ 'lib/min.js', 438, 420 ]
+56 silly gunzTarPerm extractEntry lib/util.js
+57 silly gunzTarPerm modified mode [ 'lib/util.js', 438, 420 ]
+58 silly gunzTarPerm extractEntry lib/compile/inline-images.js
+59 silly gunzTarPerm modified mode [ 'lib/compile/inline-images.js', 438, 420 ]
+60 silly gunzTarPerm extractEntry lib/compile/prefix-whitespace.js
+61 silly gunzTarPerm modified mode [ 'lib/compile/prefix-whitespace.js', 438, 420 ]
+62 silly gunzTarPerm extractEntry lib/compile/strict-property-order.js
+63 silly gunzTarPerm modified mode [ 'lib/compile/strict-property-order.js', 438, 420 ]
+64 silly gunzTarPerm extractEntry lib/compile/zero-units.js
+65 silly gunzTarPerm modified mode [ 'lib/compile/zero-units.js', 438, 420 ]
+66 silly gunzTarPerm extractEntry lib/lint/inline-images.js
+67 silly gunzTarPerm modified mode [ 'lib/lint/inline-images.js', 438, 420 ]
+68 silly gunzTarPerm extractEntry lib/lint/no-IDs.js
+69 silly gunzTarPerm modified mode [ 'lib/lint/no-IDs.js', 438, 420 ]
+70 silly gunzTarPerm extractEntry lib/lint/no-JS-prefix.js
+71 silly gunzTarPerm modified mode [ 'lib/lint/no-JS-prefix.js', 438, 420 ]
+72 silly gunzTarPerm extractEntry lib/lint/no-overqualifying.js
+73 silly gunzTarPerm modified mode [ 'lib/lint/no-overqualifying.js', 438, 420 ]
+74 silly gunzTarPerm extractEntry lib/lint/no-underscores.js
+75 silly gunzTarPerm modified mode [ 'lib/lint/no-underscores.js', 438, 420 ]
+76 silly gunzTarPerm extractEntry lib/lint/no-universal-selectors.js
+77 silly gunzTarPerm modified mode [ 'lib/lint/no-universal-selectors.js', 438, 420 ]
+78 silly gunzTarPerm extractEntry lib/lint/strict-property-order.js
+79 silly gunzTarPerm modified mode [ 'lib/lint/strict-property-order.js', 438, 420 ]
+80 silly gunzTarPerm extractEntry lib/lint/zero-units.js
+81 silly gunzTarPerm modified mode [ 'lib/lint/zero-units.js', 438, 420 ]
+82 silly gunzTarPerm extractEntry .gitattributes
+83 silly gunzTarPerm modified mode [ '.gitattributes', 438, 420 ]
+84 silly gunzTarPerm extractEntry .travis.yml
+85 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+86 silly gunzTarPerm extractEntry makefile
+87 silly gunzTarPerm modified mode [ 'makefile', 438, 420 ]
+88 silly gunzTarPerm extractEntry benchmark/index.js
+89 silly gunzTarPerm modified mode [ 'benchmark/index.js', 438, 420 ]
+90 silly gunzTarPerm extractEntry benchmark/benchmark.less
+91 silly gunzTarPerm modified mode [ 'benchmark/benchmark.less', 438, 420 ]
+92 silly gunzTarPerm extractEntry bin/recess
+93 silly gunzTarPerm modified mode [ 'bin/recess', 438, 420 ]
+94 silly gunzTarPerm extractEntry test/index.js
+95 silly gunzTarPerm modified mode [ 'test/index.js', 438, 420 ]
+96 silly gunzTarPerm extractEntry test/compiled/preboot.css
+97 silly gunzTarPerm modified mode [ 'test/compiled/preboot.css', 438, 420 ]
+98 silly gunzTarPerm extractEntry test/compiled/blog.css
+99 silly gunzTarPerm modified mode [ 'test/compiled/blog.css', 438, 420 ]
+100 silly gunzTarPerm extractEntry test/compiled/no-IDs.css
+101 silly gunzTarPerm modified mode [ 'test/compiled/no-IDs.css', 438, 420 ]
+102 silly gunzTarPerm extractEntry test/compiled/no-JS.css
+103 silly gunzTarPerm modified mode [ 'test/compiled/no-JS.css', 438, 420 ]
+104 silly gunzTarPerm extractEntry test/compiled/no-overqualifying.css
+105 silly gunzTarPerm modified mode [ 'test/compiled/no-overqualifying.css', 438, 420 ]
+106 silly gunzTarPerm extractEntry test/compiled/no-underscores.css
+107 silly gunzTarPerm modified mode [ 'test/compiled/no-underscores.css', 438, 420 ]
+108 silly gunzTarPerm extractEntry test/compiled/inline-images.css
+109 silly gunzTarPerm modified mode [ 'test/compiled/inline-images.css', 438, 420 ]
+110 silly gunzTarPerm extractEntry test/compiled/prefixes.css
+111 silly gunzTarPerm modified mode [ 'test/compiled/prefixes.css', 438, 420 ]
+112 silly gunzTarPerm extractEntry test/compiled/property-order.css
+113 silly gunzTarPerm modified mode [ 'test/compiled/property-order.css', 438, 420 ]
+114 silly gunzTarPerm extractEntry test/compiled/simple.css
+115 silly gunzTarPerm modified mode [ 'test/compiled/simple.css', 438, 420 ]
+116 silly gunzTarPerm extractEntry test/compiled/universal-selectors.css
+117 silly gunzTarPerm modified mode [ 'test/compiled/universal-selectors.css', 438, 420 ]
+118 silly gunzTarPerm extractEntry test/compiled/zero-units.css
+119 silly gunzTarPerm modified mode [ 'test/compiled/zero-units.css', 438, 420 ]
+120 silly gunzTarPerm extractEntry test/fixtures/preboot.less
+121 silly gunzTarPerm modified mode [ 'test/fixtures/preboot.less', 438, 420 ]
+122 silly gunzTarPerm extractEntry test/fixtures/blog.css
+123 silly gunzTarPerm modified mode [ 'test/fixtures/blog.css', 438, 420 ]
+124 silly gunzTarPerm extractEntry test/fixtures/no-IDs.css
+125 silly gunzTarPerm modified mode [ 'test/fixtures/no-IDs.css', 438, 420 ]
+126 silly gunzTarPerm extractEntry test/fixtures/no-JS.css
+127 silly gunzTarPerm modified mode [ 'test/fixtures/no-JS.css', 438, 420 ]
+128 silly gunzTarPerm extractEntry test/fixtures/no-overqualifying.css
+129 silly gunzTarPerm modified mode [ 'test/fixtures/no-overqualifying.css', 438, 420 ]
+130 silly gunzTarPerm extractEntry test/fixtures/no-underscores.css
+131 silly gunzTarPerm modified mode [ 'test/fixtures/no-underscores.css', 438, 420 ]
+132 silly gunzTarPerm extractEntry test/fixtures/inline-images.css
+133 silly gunzTarPerm modified mode [ 'test/fixtures/inline-images.css', 438, 420 ]
+134 silly gunzTarPerm extractEntry test/fixtures/prefixes.css
+135 silly gunzTarPerm modified mode [ 'test/fixtures/prefixes.css', 438, 420 ]
+136 silly gunzTarPerm extractEntry test/fixtures/property-order.css
+137 silly gunzTarPerm modified mode [ 'test/fixtures/property-order.css', 438, 420 ]
+138 silly gunzTarPerm extractEntry test/fixtures/simple.css
+139 silly gunzTarPerm modified mode [ 'test/fixtures/simple.css', 438, 420 ]
+140 silly gunzTarPerm extractEntry test/fixtures/sprite.png
+141 silly gunzTarPerm modified mode [ 'test/fixtures/sprite.png', 438, 420 ]
+142 silly gunzTarPerm extractEntry test/fixtures/universal-selectors.css
+143 silly gunzTarPerm modified mode [ 'test/fixtures/universal-selectors.css', 438, 420 ]
+144 silly gunzTarPerm extractEntry test/fixtures/zero-units.css
+145 silly gunzTarPerm modified mode [ 'test/fixtures/zero-units.css', 438, 420 ]
+146 silly gunzTarPerm extractEntry test/sprite.png
+147 silly gunzTarPerm modified mode [ 'test/sprite.png', 438, 420 ]
+148 silly gunzTarPerm extractEntry test/types/compile.js
+149 silly gunzTarPerm modified mode [ 'test/types/compile.js', 438, 420 ]
+150 silly gunzTarPerm extractEntry test/types/errors.js
+151 silly gunzTarPerm modified mode [ 'test/types/errors.js', 438, 420 ]
+152 silly gunzTarPerm extractEntry test/types/lint.js
+153 silly gunzTarPerm modified mode [ 'test/types/lint.js', 438, 420 ]
+154 silly lockFile f04905fd-72328-0-7395152582321316-package tar:///var/folders/93/66skkqh52fnd5bps3n28tg940000gn/T/npm-2788-05e5swyX/1385823372328-0.7395152582321316/package
+155 silly lockFile f04905fd-72328-0-7395152582321316-package tar:///var/folders/93/66skkqh52fnd5bps3n28tg940000gn/T/npm-2788-05e5swyX/1385823372328-0.7395152582321316/package
+156 silly lockFile ec7e3b36-72328-0-7395152582321316-tmp-tgz tar:///var/folders/93/66skkqh52fnd5bps3n28tg940000gn/T/npm-2788-05e5swyX/1385823372328-0.7395152582321316/tmp.tgz
+157 silly lockFile ec7e3b36-72328-0-7395152582321316-tmp-tgz tar:///var/folders/93/66skkqh52fnd5bps3n28tg940000gn/T/npm-2788-05e5swyX/1385823372328-0.7395152582321316/tmp.tgz
+158 verbose tar pack [ '/Users/rosannehoyem/.npm/recess/1.1.9/package.tgz',
+158 verbose tar pack   '/var/folders/93/66skkqh52fnd5bps3n28tg940000gn/T/npm-2788-05e5swyX/1385823372328-0.7395152582321316/package' ]
+159 verbose tarball /Users/rosannehoyem/.npm/recess/1.1.9/package.tgz
+160 verbose folder /var/folders/93/66skkqh52fnd5bps3n28tg940000gn/T/npm-2788-05e5swyX/1385823372328-0.7395152582321316/package
+161 silly lockFile f04905fd-72328-0-7395152582321316-package tar:///var/folders/93/66skkqh52fnd5bps3n28tg940000gn/T/npm-2788-05e5swyX/1385823372328-0.7395152582321316/package
+162 verbose lock tar:///var/folders/93/66skkqh52fnd5bps3n28tg940000gn/T/npm-2788-05e5swyX/1385823372328-0.7395152582321316/package /Users/rosannehoyem/.npm/f04905fd-72328-0-7395152582321316-package.lock
+163 silly lockFile 5753cbe4-yem-npm-recess-1-1-9-package-tgz tar:///Users/rosannehoyem/.npm/recess/1.1.9/package.tgz
+164 verbose lock tar:///Users/rosannehoyem/.npm/recess/1.1.9/package.tgz /Users/rosannehoyem/.npm/5753cbe4-yem-npm-recess-1-1-9-package-tgz.lock
+165 silly lockFile f04905fd-72328-0-7395152582321316-package tar:///var/folders/93/66skkqh52fnd5bps3n28tg940000gn/T/npm-2788-05e5swyX/1385823372328-0.7395152582321316/package
+166 silly lockFile f04905fd-72328-0-7395152582321316-package tar:///var/folders/93/66skkqh52fnd5bps3n28tg940000gn/T/npm-2788-05e5swyX/1385823372328-0.7395152582321316/package
+167 silly lockFile 5753cbe4-yem-npm-recess-1-1-9-package-tgz tar:///Users/rosannehoyem/.npm/recess/1.1.9/package.tgz
+168 silly lockFile 5753cbe4-yem-npm-recess-1-1-9-package-tgz tar:///Users/rosannehoyem/.npm/recess/1.1.9/package.tgz
+169 silly lockFile 563eadcc-nehoyem-npm-recess-1-1-9-package /Users/rosannehoyem/.npm/recess/1.1.9/package
+170 verbose lock /Users/rosannehoyem/.npm/recess/1.1.9/package /Users/rosannehoyem/.npm/563eadcc-nehoyem-npm-recess-1-1-9-package.lock
+171 silly lockFile 563eadcc-nehoyem-npm-recess-1-1-9-package /Users/rosannehoyem/.npm/recess/1.1.9/package
+172 silly lockFile 563eadcc-nehoyem-npm-recess-1-1-9-package /Users/rosannehoyem/.npm/recess/1.1.9/package
+173 verbose tar unpack /Users/rosannehoyem/.npm/recess/1.1.9/package.tgz
+174 silly lockFile 09e50715-nehoyem-npm-recess-1-1-9-package tar:///Users/rosannehoyem/.npm/recess/1.1.9/package
+175 verbose lock tar:///Users/rosannehoyem/.npm/recess/1.1.9/package /Users/rosannehoyem/.npm/09e50715-nehoyem-npm-recess-1-1-9-package.lock
+176 silly lockFile 5753cbe4-yem-npm-recess-1-1-9-package-tgz tar:///Users/rosannehoyem/.npm/recess/1.1.9/package.tgz
+177 verbose lock tar:///Users/rosannehoyem/.npm/recess/1.1.9/package.tgz /Users/rosannehoyem/.npm/5753cbe4-yem-npm-recess-1-1-9-package-tgz.lock
+178 silly gunzTarPerm modes [ '755', '644' ]
+179 silly gunzTarPerm extractEntry package.json
+180 silly gunzTarPerm extractEntry .npmignore
+181 silly gunzTarPerm extractEntry README.md
+182 silly gunzTarPerm extractEntry LICENSE
+183 silly gunzTarPerm extractEntry benchmark/index.js
+184 silly gunzTarPerm extractEntry benchmark/benchmark.less
+185 silly gunzTarPerm extractEntry .gitattributes
+186 silly gunzTarPerm extractEntry bin/recess
+187 silly gunzTarPerm extractEntry lib/core.js
+188 silly gunzTarPerm extractEntry lib/index.js
+189 silly gunzTarPerm extractEntry lib/min.js
+190 silly gunzTarPerm extractEntry lib/util.js
+191 silly gunzTarPerm extractEntry lib/compile/inline-images.js
+192 silly gunzTarPerm extractEntry lib/compile/prefix-whitespace.js
+193 silly gunzTarPerm extractEntry lib/compile/strict-property-order.js
+194 silly gunzTarPerm extractEntry lib/compile/zero-units.js
+195 silly gunzTarPerm extractEntry lib/lint/inline-images.js
+196 silly gunzTarPerm extractEntry lib/lint/no-IDs.js
+197 silly gunzTarPerm extractEntry lib/lint/no-JS-prefix.js
+198 silly gunzTarPerm extractEntry lib/lint/no-overqualifying.js
+199 silly gunzTarPerm extractEntry lib/lint/no-underscores.js
+200 silly gunzTarPerm extractEntry lib/lint/no-universal-selectors.js
+201 silly gunzTarPerm extractEntry lib/lint/strict-property-order.js
+202 silly gunzTarPerm extractEntry lib/lint/zero-units.js
+203 silly gunzTarPerm extractEntry makefile
+204 silly gunzTarPerm extractEntry .travis.yml
+205 silly gunzTarPerm extractEntry test/index.js
+206 silly gunzTarPerm extractEntry test/compiled/preboot.css
+207 silly gunzTarPerm extractEntry test/compiled/blog.css
+208 silly gunzTarPerm extractEntry test/compiled/no-IDs.css
+209 silly gunzTarPerm extractEntry test/compiled/no-JS.css
+210 silly gunzTarPerm extractEntry test/compiled/no-overqualifying.css
+211 silly gunzTarPerm extractEntry test/compiled/no-underscores.css
+212 silly gunzTarPerm extractEntry test/compiled/inline-images.css
+213 silly gunzTarPerm extractEntry test/compiled/prefixes.css
+214 silly gunzTarPerm extractEntry test/compiled/property-order.css
+215 silly gunzTarPerm extractEntry test/compiled/simple.css
+216 silly gunzTarPerm extractEntry test/compiled/universal-selectors.css
+217 silly gunzTarPerm extractEntry test/compiled/zero-units.css
+218 silly gunzTarPerm extractEntry test/fixtures/preboot.less
+219 silly gunzTarPerm extractEntry test/fixtures/blog.css
+220 silly gunzTarPerm extractEntry test/fixtures/no-IDs.css
+221 silly gunzTarPerm extractEntry test/fixtures/no-JS.css
+222 silly gunzTarPerm extractEntry test/fixtures/no-overqualifying.css
+223 silly gunzTarPerm extractEntry test/fixtures/no-underscores.css
+224 silly gunzTarPerm extractEntry test/fixtures/inline-images.css
+225 silly gunzTarPerm extractEntry test/fixtures/prefixes.css
+226 silly gunzTarPerm extractEntry test/fixtures/property-order.css
+227 silly gunzTarPerm extractEntry test/fixtures/simple.css
+228 silly gunzTarPerm extractEntry test/fixtures/sprite.png
+229 silly gunzTarPerm extractEntry test/fixtures/universal-selectors.css
+230 silly gunzTarPerm extractEntry test/fixtures/zero-units.css
+231 silly gunzTarPerm extractEntry test/sprite.png
+232 silly gunzTarPerm extractEntry test/types/compile.js
+233 silly gunzTarPerm extractEntry test/types/errors.js
+234 silly gunzTarPerm extractEntry test/types/lint.js
+235 silly lockFile 09e50715-nehoyem-npm-recess-1-1-9-package tar:///Users/rosannehoyem/.npm/recess/1.1.9/package
+236 silly lockFile 09e50715-nehoyem-npm-recess-1-1-9-package tar:///Users/rosannehoyem/.npm/recess/1.1.9/package
+237 silly lockFile 5753cbe4-yem-npm-recess-1-1-9-package-tgz tar:///Users/rosannehoyem/.npm/recess/1.1.9/package.tgz
+238 silly lockFile 5753cbe4-yem-npm-recess-1-1-9-package-tgz tar:///Users/rosannehoyem/.npm/recess/1.1.9/package.tgz
+239 verbose chmod /Users/rosannehoyem/.npm/recess/1.1.9/package.tgz 644
+240 verbose chown /Users/rosannehoyem/.npm/recess/1.1.9/package.tgz [ 501, 20 ]
+241 silly lockFile 8f8cecd7-pmjs-org-recess-recess-1-1-9-tgz https://registry.npmjs.org/recess/-/recess-1.1.9.tgz
+242 silly lockFile 8f8cecd7-pmjs-org-recess-recess-1-1-9-tgz https://registry.npmjs.org/recess/-/recess-1.1.9.tgz
+243 silly lockFile 21009289-recess-1-1-9 recess@1.1.9
+244 silly lockFile 21009289-recess-1-1-9 recess@1.1.9
+245 silly lockFile e131134d-recess recess@
+246 silly lockFile e131134d-recess recess@
+247 silly resolved [ { name: 'recess',
+247 silly resolved     description: 'A simple, attractive code quality tool for CSS built on top of LESS',
+247 silly resolved     version: '1.1.9',
+247 silly resolved     author:
+247 silly resolved      { name: 'Jacob Thornton',
+247 silly resolved        email: 'jacob@twitter.com',
+247 silly resolved        url: 'https://github.com/fat' },
+247 silly resolved     repository: { type: 'git', url: 'git://github.com/twitter/recess.git' },
+247 silly resolved     keywords: [ 'css', 'lint' ],
+247 silly resolved     licenses: [ [Object] ],
+247 silly resolved     main: './lib',
+247 silly resolved     homepage: 'http://twitter.github.com/recess',
+247 silly resolved     engines: { node: '>= 0.4.0' },
+247 silly resolved     dependencies:
+247 silly resolved      { colors: '>= 0.3.0',
+247 silly resolved        nopt: '>= 1.0.10',
+247 silly resolved        underscore: '>= 1.2.1',
+247 silly resolved        watch: '>= 0.5.1',
+247 silly resolved        less: '~1.3.0' },
+247 silly resolved     directories: { bin: './bin' },
+247 silly resolved     scripts: { test: 'node test' },
+247 silly resolved     bin: { recess: './bin/recess' },
+247 silly resolved     preferGlobal: true,
+247 silly resolved     readme: 'RECESS [![Build Status](https://secure.travis-ci.org/twitter/recess.png)](http://travis-ci.org/twitter/recess)\n======\n\nDeveloped at Twitter to support our internal styleguide, RECESS is a simple, attractive code quality tool for CSS built on top of LESS.\n\nIncorporate it into your development process as a linter, or integrate it directly into your build system as a compiler, RECESS will keep your source looking clean and super manageable.\n\n\nGENERAL USE\n-----------\n\n```CLI\n$ recess [path] [options]\n```\n\nOPTIONS\n-------\n\n- --compile - compiles your code and outputs it to the terminal. Fixes white space and sort order. Can compile css or less.\n- --compress - compress your compiled code.\n- --config - accepts a path, which specifies a json config object\n- --format <format> - control the output format of errors:\n  - --format text - the default format, shows errors and context\n  - --format compact - show errors one-error-per-line, useful for IDE integration\n- --noSummary - don\'t output the summary block for each file\n- --includePath - accepts an additional directory path to look for `@import`:ed LESS files in.\n- --stripColors - removes color from output (useful when logging)\n- --watch - watch filesystem for changes, useful when compiling Less projects\n- --noIDs - doesn\'t complain about using IDs in your stylesheets\n- --noJSPrefix - doesn\'t complain about styling `.js-` prefixed classnames\n- --noOverqualifying - doesn\'t complain about overqualified selectors (ie: `div#foo.bar`)\n- --noUnderscores - doesn\'t complain about using underscores in your class names\n- --noUniversalSelectors - doesn\'t complain about using the universal `*` selector\n- --prefixWhitespace - adds whitespace prefix to line up vender prefixed properties\n- --strictPropertyOrder - doesn\'t looking into your property ordering\n- --zeroUnits - doesn\'t complain if you add units to values of 0\n\n\nEXAMPLES\n--------\n\nLint all css files\n\n```CLI\n$ recess *.css\n```\n\nLint file, ignore styling of IDs\n\n```CLI\n$ recess ./bootstrap.css --noIds false\n```\n\nLint file with compact output and no color\n\n```CLI\n$ recess ./bootstrap.css --format compact --stripColors\n```\n\nCompile and compress .less file, then output it to a new file\n\n```CLI\n$ recess ./bootstrap.less --compress > ./bootstrap-production.css\n```\n\nWatch a directory for changes and auto compile a css file from the changes. *experimental*\n\n```CLI\n$ recess input.less:ouput.css --watch watch/this/dir/for/changes\n```\n\nWatch a single file for changes and auto compile a css file from the changes. *experimental*\n\n```CLI\n$ recess input.less:ouput.css --watch\n```\n\nPROGRAMMATIC API\n----------------\n\nRecess provides a pretty simple programmatic api.\n\n```JS\nvar recess = require(\'recess\')\n```\n\nOnce you\'ve required recess, just pass it a `path` (or array of paths) and an optional `options` object and an optional `callback`:\n\n```js\nrecess([\'../fat.css\', \'../twitter.css\'], { compile: true }, callback)\n```\n\nThe following options (and defaults) are available in the programatic api:\n\n- compile: false\n- compress: false\n- includePath: []\n- noIDs: true\n- noJSPrefix: true\n- noOverqualifying: true\n- noUnderscores: true\n- noUniversalSelectors: true\n- prefixWhitespace: true\n- strictPropertyOrder: true\n- stripColors: false\n- zeroUnits: true\n\nThe callback is fired when each instance has finished processessing an input. The callback is passed an array of of instances (one for each path). The instances have a bunch of useful things on them like the raw data and an array of output strings.\n\nWhen compiling, access the compiled source through the output property:\n\n```js\nvar recess = require(\'recess\')\n\nrecess(\'./js/fat.css\', { compile: true }, function (err, obj) {\n  if (err) throw err\n  console.log(\n  \tobj // recess instance for fat.css\n  , obj.output // array of loggable content\n  , obj.errors // array of failed lint rules\n  )\n})\n```\n\nINSTALLATION\n------------\n\nTo install recess you need both node and npm installed.\n\n```CLI\n$ npm install recess -g\n```\n\nAUTHORS\n------------\n\n+ **Jacob Thornton**: https://twitter.com/fat\n\nLICENSE\n------------\n\nCopyright 2012 Twitter, Inc.\n\nLicensed under the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0',
+247 silly resolved     readmeFilename: 'README.md',
+247 silly resolved     bugs: { url: 'https://github.com/twitter/recess/issues' },
+247 silly resolved     _id: 'recess@1.1.9',
+247 silly resolved     dist: { shasum: 'b87a8582f100099afffb50eea9b11d0db0e652dd' },
+247 silly resolved     _from: 'recess@',
+247 silly resolved     _resolved: 'https://registry.npmjs.org/recess/-/recess-1.1.9.tgz' } ]
+248 info install recess@1.1.9 into /usr/local/lib
+249 info installOne recess@1.1.9
+250 info /usr/local/lib/node_modules/recess unbuild
+251 verbose tar unpack /Users/rosannehoyem/.npm/recess/1.1.9/package.tgz
+252 silly lockFile 7a88eaac-sr-local-lib-node-modules-recess tar:///usr/local/lib/node_modules/recess
+253 verbose lock tar:///usr/local/lib/node_modules/recess /Users/rosannehoyem/.npm/7a88eaac-sr-local-lib-node-modules-recess.lock
+254 silly lockFile 5753cbe4-yem-npm-recess-1-1-9-package-tgz tar:///Users/rosannehoyem/.npm/recess/1.1.9/package.tgz
+255 verbose lock tar:///Users/rosannehoyem/.npm/recess/1.1.9/package.tgz /Users/rosannehoyem/.npm/5753cbe4-yem-npm-recess-1-1-9-package-tgz.lock
+256 silly gunzTarPerm modes [ '755', '644' ]
+257 error Error: EACCES, mkdir '/usr/local/lib/node_modules/recess'
+257 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/recess']
+257 error   errno: 3,
+257 error   code: 'EACCES',
+257 error   path: '/usr/local/lib/node_modules/recess',
+257 error   fstream_type: 'Directory',
+257 error   fstream_path: '/usr/local/lib/node_modules/recess',
+257 error   fstream_class: 'DirWriter',
+257 error   fstream_stack:
+257 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+257 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53',
+257 error      'Object.oncomplete (fs.js:107:15)' ] }
+258 error Please try running this command again as root/Administrator.
+259 error System Darwin 12.5.0
+260 error command "node" "/usr/local/bin/npm" "instal" "recess" "-g"
+261 error cwd /Users/rosannehoyem/Development/code/projects/bucket-list
+262 error node -v v0.10.22
+263 error npm -v 1.3.14
+264 error path /usr/local/lib/node_modules/recess
+265 error fstream_path /usr/local/lib/node_modules/recess
+266 error fstream_type Directory
+267 error fstream_class DirWriter
+268 error code EACCES
+269 error errno 3
+270 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/recess'
+271 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+271 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53
+271 error fstream_stack Object.oncomplete (fs.js:107:15)
+272 verbose exit [ 3, true ]

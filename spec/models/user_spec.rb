@@ -45,7 +45,7 @@ describe User do
 		expect(user).to have(1).errors_on(:list_item)
 	end
 
-describe "#send_confirmation_email" do
+	describe "#send_confirmation_email" do
     let(:user) { Factory(:user) }
 
     it "delivers email to user" do

@@ -12,8 +12,8 @@ class User < ActiveRecord::Base
   validates :email, :name, uniqueness: true
 
 
-  class EmailConfirmationError < StandardError
-	end
+ #  class EmailConfirmationError < StandardError
+	# end
   
 
   # after_create :send_confirmation_email

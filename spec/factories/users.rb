@@ -6,9 +6,11 @@ FactoryGirl.define do
     name { Faker::Name.name }
     email { Faker::Internet.email }
     location { Faker::Address.city }
+    password "password"
+    password_confirmation "password"
   end
 
   factory :invalid_user do
-  	name nil
+  	email nil
   end
 end

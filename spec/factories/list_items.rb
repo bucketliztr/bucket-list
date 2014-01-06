@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :list_item do
-    name "MyText"
+    content "Bucket list item"
     user_id nil
   end
 end

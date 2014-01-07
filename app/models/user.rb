@@ -11,7 +11,6 @@ class User < ActiveRecord::Base
   accepts_nested_attributes_for :list_items, :allow_destroy => true, :reject_if => :all_blank
 
   validates :email, presence: true
-  validates :name, length: { minimum: 3 }
   validates :email, uniqueness: true
 
   def self.from_omniauth(auth)
@@ -45,8 +44,7 @@ class User < ActiveRecord::Base
     end
   end
 
-  send_confirmation_email
-
-  end
-
 end
+
+
+

@@ -1,9 +1,6 @@
 require 'spec_helper'
 
 describe User do
-  	it "has a valid factory" do
-		expect(FactoryGirl.build(:user)).to be_valid
-	end
 
 	it "is valid with a name, email, age, location, password, and password_confirmation" do
 		user = User.new(

@@ -21,12 +21,19 @@
       </div>
       <br>
       <h3>Bucket List Items</h3>
+        <% if @user.list_items.count >= 1 %>
+          <ul>
+            <%= @user.list_items.each do |list_item| %>
+              <li><%= list.item.content %></li>
+          <%end%>
+          </ul>
+        <%end%>
         <%= f.fields_for :list_item do |ff| %>
           <fieldset id="list-items">
             <div class="list_item">
               <div class="form-group">
-                <%= ff.label :name, "Add an Item" %>
-                <%= ff.text_field :name %>
+                <%= ff.label :content, "Add an Item" %>
+                <%= ff.text_field :content %>
               </div>
               <div class="form-group">
                 <%= ff.check_box :_destroy, class: "remove" %>
@@ -35,12 +42,11 @@
             </div>
           </fieldset>
         <% end %>
-        <button id="add_exercise" class="form-submit-btn"><h4>Add Another List Item<h4></button>
+        <button id="add_list_item" class="btn-default btn-sm"><h4>Add Another List Item<h4></button>
+
         <br><br>
         <hr>
-        <div class="actions">
-          <button type="submit" class="form-submit-btn">Save Your Bucket List</button>   
-        </div>
+          <%= f.submit "Save Your Bucket List", class: "btn btn-primary btn-lg" %>   
     <% end %>
 
 
